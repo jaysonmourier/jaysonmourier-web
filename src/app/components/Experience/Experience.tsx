@@ -13,42 +13,42 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
     return (
         <div>
                 <div className="flex flex-col md:flex-row">
-    {/* Section gauche : Informations principales */}
-    <div className="bg-black/60 p-4 text-white rounded-2xl md:rounded-l-2xl md:rounded-r-none flex flex-col md:flex-row items-center grow">
-        {/* Image du logo */}
-        <div className="relative min-w-[100px] min-h-[100px]">
-            <Image
-                src={experience.logoPath}
-                alt={experience.logoAlt}
-                layout="fill"
-                className="rounded-full object-cover"
-            />
-        </div>
-
-        {/* Informations textuelles */}
-        <div className="flex flex-col justify-around items-center md:items-start gap-1 md:ml-4">
-            {/* Métadonnées */}
-            <div className="flex flex-row items-center gap-3 text-xs mt-2">
-                {/* Affichage conditionnel pour mobile */}
-                <div className="bg-black py-1 px-2 rounded-full">{experience.type}</div>
-                <div className="md:hidden flex flex-row gap-2 items-center">
-                    <FontAwesomeIcon icon={faLocationDot} />
-                    <p>{experience.location}</p>
-                </div>
-                <p>{experience.date}</p>
+        {/* Section gauche : Informations principales */}
+        <div className="bg-black/60 p-4 text-white rounded-2xl md:rounded-l-2xl md:rounded-r-none flex flex-col md:flex-row md:flex-1 items-center">
+            {/* Image du logo */}
+            <div className="relative min-w-[100px] min-h-[100px]">
+                <Image
+                    src={experience.logoPath}
+                    alt={experience.logoAlt}
+                    layout="fill"
+                    className="rounded-full object-cover"
+                />
             </div>
 
-            {/* Titre */}
-            <p className="text-lg md:text-2xl text-center md:text-left">{experience.title}</p>
+            {/* Informations textuelles */}
+            <div className="flex flex-col justify-around items-center md:items-start gap-1 md:ml-4">
+                {/* Métadonnées */}
+                <div className="flex flex-row items-center gap-3 text-xs mt-2">
+                    {/* Affichage conditionnel pour mobile */}
+                    <div className="bg-black py-1 px-2 rounded-full">{experience.type}</div>
+                    <div className="md:hidden flex flex-row gap-2 items-center">
+                        <FontAwesomeIcon icon={faLocationDot} />
+                        <p>{experience.location}</p>
+                    </div>
+                    <p>{experience.date}</p>
+                </div>
+
+                {/* Titre */}
+                <p className="text-lg md:text-2xl text-center md:text-left">{experience.title}</p>
+            </div>
+        </div>
+
+        {/* Section droite : Affichage pour desktop */}
+        <div className="hidden md:flex md:flex-row justify-center items-center flex-1 bg-black/90 text-white rounded-r-2xl text-2xl px-2 gap-2 max-w-[185px]">
+            <FontAwesomeIcon icon={faLocationDot} />
+            <p>{experience.location}</p>
         </div>
     </div>
-
-    {/* Section droite : Affichage pour desktop */}
-    <div className="hidden md:flex md:flex-row justify-center items-center flex-1 bg-black/90 text-white rounded-r-2xl text-2xl px-2 gap-2 max-w-[185px]">
-        <FontAwesomeIcon icon={faLocationDot} />
-        <p>{experience.location}</p>
-    </div>
-</div>
 
 
                 {/* */}
