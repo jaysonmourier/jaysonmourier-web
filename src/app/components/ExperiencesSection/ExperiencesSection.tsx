@@ -10,7 +10,7 @@ type WidgetProps = {
 const ExperiencesSection: React.FC<WidgetProps> = ({experiences}) => {
     return (
         <section className="experiences-section rounded-lg py-4 px-7 mt-4">
-            <p className="font-bold text-5xl mt-4 mb-8">Mon<br />Expérience</p>
+            <p className="font-bold text-5xl mt-4 mb-8 text-black">Mon<br />Expérience</p>
             {experiences.map((experience, index) => (
                 <div key={index} className={index > 0 ? "": ""}>
                     <Experience 
