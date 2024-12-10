@@ -7,10 +7,10 @@ export default function Header() {
     return (
         <header className="flex flex-col xl:flex-row justify-between items-stretch h-[640px] xl:h-[400px] overflow-hidden">
             <div className="xl:flex-1 h-full text-center header-info-section p-8 flex flex-col justify-between rounded-t-2xl xl:rounded-tr-none xl:rounded-l-2xl relative -z-20">
-                <p className="font-bold">Passionné par le développement mobile et web, je développe des applications performantes et intuitives, aussi bien dans un cadre professionnel que personnel.</p>
+                <p className="font-bold text-black">Passionné par le développement mobile et web, je développe des applications performantes et intuitives, aussi bien dans un cadre professionnel que personnel.</p>
                 <div className="w-full h-[70px]"></div>
                 <div className="self-start text-left header-info-text">
-                    <p className="font-bold">Jayson<br />Mourier</p>
+                    <p className="font-bold text-black">Jayson<br />Mourier</p>
                     <p className="font-medium text-gray-500">Ingénieur<br />Informatique</p>
                 </div>
                 <div className="relative">
