@@ -1,101 +1,48 @@
-import Image from "next/image";
+import Header from "@/app/components/Header/Header";
+import ExperiencesSection from "@/app/components/ExperiencesSection/ExperiencesSection";
+import { ExperienceModel } from "./types/Experience";
+
+const experiencesData: ExperienceModel[] = [
+  {
+    title: "Ingénieur informatique au Commissariat à l'énergie atomique et aux énergies alternatives",
+    type: "Alternance",
+    date: "2022-2024",
+    location: "Paris",
+    description: "Développement de l'application Astro-Colibri (iOS, Android et Web) avec le framework Flutter, mise en place des tests unitaires, pipeline CI/CD, développement back-end (Python et Flask).",
+    logoPath: "/assets/images/cea_logo.webp",
+    logoAlt: "The official CEA logo",
+    imagePath: "/assets/images/cea_paris_saclay.webp",
+    imageAlt: "CEA's Paris Saclay site"
+  },
+  {
+    title: "Stage de recherche à l'université Paris Nanterre",
+    type: "Stage de recherche",
+    date: "2022",
+    location: "Paris",
+    description: "Stage de 5 mois sur l'implémentation d'algorithmes d'apprentissage par renforcement sur de la sélection de variables dans le contexte de la maladie de Charcot.",
+    logoPath: "/assets/images/nanterre_logo.webp",
+    logoAlt: "The official Nanterre University logo",
+    imagePath: "/assets/images/nanterre_universite.webp",
+    imageAlt: "Nanterre University"
+  },
+  {
+    title: "Stage de recherche à l'université d'Avignon",
+    type: "Stage de recherche",
+    date: "2021",
+    location: "Avignon",
+    description: "Stage de 3 mois sur le traitement du langage naturel dans le contexte de l'ouverture de l abase de données foncière DVF en open source.",
+    logoPath: "/assets/images/avignon_universite_logo.webp",
+    logoAlt: "The official Avignon University logo",
+    imagePath: "/assets/images/avignon_universite.webp",
+    imageAlt: "Avignon University"
+  },
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="container mx-auto p-4">
+      <Header />
+      <ExperiencesSection experiences={experiencesData} />
     </div>
   );
 }
