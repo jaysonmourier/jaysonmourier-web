@@ -12,7 +12,7 @@ const ExperiencesSection: React.FC<WidgetProps> = ({experiences}) => {
         <section className="experiences-section rounded-lg py-4 px-7 mt-4">
             <p className="font-bold text-5xl mt-4 mb-8">Mon<br />Expérience</p>
             {experiences.map((experience, index) => (
-                <div className={index > 0 ? "": ""}>
+                <div key={index} className={index > 0 ? "": ""}>
                     <Experience 
                     key={index}
                     experience={experience}
