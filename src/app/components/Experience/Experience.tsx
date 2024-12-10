@@ -44,7 +44,7 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
         </div>
 
         {/* Section droite : Affichage pour desktop */}
-        <div className="hidden md:flex md:flex-row justify-center items-center flex-1 bg-black/90 text-white rounded-r-2xl text-2xl px-2 gap-2 max-w-[185px]">
+        <div className="hidden md:flex md:flex-col justify-center items-center flex-1 bg-black/90 text-white rounded-r-2xl text-2xl px-2 gap-2 max-w-[185px]">
             <FontAwesomeIcon icon={faLocationDot} />
             <p>{experience.location}</p>
         </div>
