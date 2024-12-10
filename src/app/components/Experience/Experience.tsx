@@ -23,11 +23,11 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
                         />
                     </div>
                         <div className="flex flex-col justify-around ml-4 gap-1">
-                        <div className="md:hidden flex flex-row gap-2 items-center">
+                        <div className="md:hidden flex flex-row gap-2 items-center text-xs">
                                     <FontAwesomeIcon icon={faLocationDot} />
                                     <p>{experience.location}</p>
                                 </div>
-                            <div className="flex flex-row items-center">
+                            <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:gap-0 text-xs">
                                 <div className="bg-black mr-2 py-1 px-2 rounded-full">{experience.type}</div>
                                 <p>{experience.date}</p>
                             </div>
