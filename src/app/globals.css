@@ -14,8 +14,10 @@
   :root {
     --background: #22211d;
     --foreground: #f7f5ef;
-    --primary: #f7f5ef;
+    --muted: #a09e99;
+    --primary: #44423d;
     --secondary: #63615c;
+    --hr: #63615c;
   }
 }
 
