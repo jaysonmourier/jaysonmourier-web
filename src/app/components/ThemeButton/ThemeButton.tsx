@@ -27,7 +27,7 @@ export default function ThemeButton() {
             onClick={toggleTheme}
             className="fixed w-[50px] h-[50px] bg-blue-500 bottom-0 right-0 m-4 z-50 cursor-pointer rounded-full flex justify-center items-center theme-button"
         >
-        <FontAwesomeIcon icon={theme === "dark" ? faMoon : faSun} className="w-[25px] h-[25px]" />
+        <FontAwesomeIcon icon={theme === "light" ? faMoon : faSun} className="w-[25px] h-[25px]" />
         </div>
     );
 }
