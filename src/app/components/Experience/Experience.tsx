@@ -14,7 +14,7 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
         <div>
                 <div className="flex flex-col md:flex-row">
         {/* Section gauche : Informations principales */}
-        <div className="bg-black/60 p-4 text-white rounded-2xl md:rounded-l-2xl md:rounded-r-none flex flex-col md:flex-row md:flex-1 items-center">
+        <div className="bg-black/70 p-4 text-white rounded-2xl md:rounded-l-2xl md:rounded-r-none flex flex-col md:flex-row md:flex-1 items-center">
             {/* Image du logo */}
             <div className="relative min-w-[100px] min-h-[100px]">
                 <Image
@@ -53,7 +53,7 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
 
                 {/* */}
                 <div className="flex flex-col md:flex-row mt-2 gap-1">
-                <div className="bg-black/60 rounded-2xl p-4 text-white flex-1">
+                <div className="bg-black/70 rounded-2xl p-4 text-white flex-1">
                     <p className="text-3xl tracking-wide">Travail<br />effectué</p>
                     <p className="text-lg mt-4">{experience.description}</p>
                 </div>
