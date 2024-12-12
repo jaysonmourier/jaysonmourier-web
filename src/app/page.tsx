@@ -30,7 +30,7 @@ const experiencesData: ExperienceModel[] = [
     type: "Stage de recherche",
     date: "2021",
     location: "Avignon",
-    description: "Stage de 3 mois sur le traitement du langage naturel dans le contexte de l'ouverture de l abase de données foncière DVF en open source.",
+    description: "Stage de 3 mois sur le traitement du langage naturel dans le contexte de l'ouverture de la base de données foncière DVF en open source.",
     logoPath: "/assets/images/avignon_universite_logo.webp",
     logoAlt: "The official Avignon University logo",
     imagePath: "/assets/images/avignon_universite.webp",
