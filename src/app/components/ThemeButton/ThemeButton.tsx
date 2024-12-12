@@ -2,7 +2,7 @@
 
 import {  useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon, faM } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 import "@/app/components/ThemeButton/ThemeButton.css"
 
