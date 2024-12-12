@@ -20,8 +20,8 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
                 <Image
                     src={experience.logoPath}
                     alt={experience.logoAlt}
-                    layout="fill"
                     className="rounded-full object-cover"
+                    fill
                 />
             </div>
 
@@ -61,8 +61,8 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
     <Image
         src={experience.imagePath}
         alt={experience.imageAlt}
-        layout="fill"
         className="object-cover"
+        fill
     />
 </div>
 
