@@ -16,7 +16,7 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
         {/* Section gauche : Informations principales */}
         <div className="bg-black/70 p-4 text-white rounded-2xl md:rounded-l-2xl md:rounded-r-none flex flex-col md:flex-row md:flex-1 items-center">
             {/* Image du logo */}
-            <div className="relative min-w-[100px] min-h-[100px]">
+            <div className="relative min-w-[80px] min-h-[80px] md:min-w-[100px] md:min-h-[100px]">
                 <Image
                     src={experience.logoPath}
                     alt={experience.logoAlt}
@@ -26,7 +26,7 @@ const Experience: React.FC<WidgetProps> = ({experience}) => {
             </div>
 
             {/* Informations textuelles */}
-            <div className="flex flex-col justify-around items-center md:items-start gap-1 md:ml-4">
+            <div className="flex flex-col justify-around items-center md:items-start gap-1 mt-4 md:mt-0 md:ml-4">
                 {/* Métadonnées */}
                 <div className="flex flex-row items-center gap-3 text-xs mt-2">
                     {/* Affichage conditionnel pour mobile */}
