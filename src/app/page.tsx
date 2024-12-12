@@ -1,5 +1,6 @@
 import Header from "@/app/components/Header/Header";
 import ExperiencesSection from "@/app/components/ExperiencesSection/ExperiencesSection";
+import ThemeButton from "./components/ThemeButton/ThemeButton";
 import { ExperienceModel } from "./types/Experience";
 
 const experiencesData: ExperienceModel[] = [
@@ -41,6 +42,7 @@ const experiencesData: ExperienceModel[] = [
 export default function Home() {
   return (
     <div className="container mx-auto p-4">
+      <ThemeButton />
       <Header />
       <ExperiencesSection experiences={experiencesData} />
     </div>

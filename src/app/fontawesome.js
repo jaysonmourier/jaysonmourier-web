@@ -1,5 +1,5 @@
 // lib/fontawesome.js
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPlay, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faLocationDot, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faPlay, faLocationDot);
+library.add(faPlay, faLocationDot, faSun, faMoon);

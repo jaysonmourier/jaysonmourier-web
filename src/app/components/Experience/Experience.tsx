@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { ExperienceModel } from "@/app/types/Experience";
-
+import "@/app/components/Experience/Experience.css"
 
 type WidgetProps = {
     experience: ExperienceModel

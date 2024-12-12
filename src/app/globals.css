@@ -4,15 +4,29 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #22211d;
+  --muted: #a09e99;
+  --primary: #f4f6fc;
+  --hr: #fff;
 }
 
-/*@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #22211d;
+    --foreground: #f7f5ef;
+    --primary: #f7f5ef;
+    --secondary: #63615c;
   }
-}*/
+}
+
+.dark {
+  --background: #22211d;
+  --foreground: #f7f5ef;
+  --muted: #a09e99;
+  --primary: #44423d;
+  --secondary: #63615c;
+  --hr: #63615c;
+}
 
 body {
   color: var(--foreground);

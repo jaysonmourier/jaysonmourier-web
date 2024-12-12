@@ -1,5 +1,5 @@
 .header-info-section {
-    background-color: #f4f6fc;
+    background-color: var(--primary);
 }
 
 .header-thumbnail {

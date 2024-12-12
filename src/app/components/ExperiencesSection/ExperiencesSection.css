@@ -1,3 +1,12 @@
 .experiences-section {
-    background-color: #f4f6fc;
+    background-color: var(--primary);
+}
+
+hr{
+    display:block; 
+    height: 1px; 
+    border:0; 
+    border-top: 1px solid var(--hr); 
+    margin: 1em 0; 
+    padding: 0; 
 }
