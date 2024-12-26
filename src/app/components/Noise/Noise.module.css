@@ -1,0 +1,11 @@
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 400%;
+    inset: -200%;
+    background-image: url('/noise.png');
+    opacity: 0.08;
+    pointer-events: none;
+}

@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.littleText {
+    font-weight: 500;
+    font-size: 0.75em;
+}
+
+.presentationText {
+    display: flex;
+    align-items: center;
+    gap: 7;
+    margin: 2em;
+    color: var(--light-on-primary);
+}
+
+.presentationText img {
+    transform: scaleX(-1); 
+}
+
+.headerText {
+    max-width: 728px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--on-primary) 50%, var(--primary) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

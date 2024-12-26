@@ -1,42 +1,115 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #ffffff;
+  --on-primary: #242424;
+  --light-on-background: #f8f5ff;
+  --background-color-on-primary: #242424;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: #161616;
+    --on-primary: #ededed;
+    --background-color-on-primary: #1a1a1a;
+    --light-on-background: #6f6f6f;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@font-face {
+  font-family: 'otterco';
+  src: url('/otterco_fonts/Otterco-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'otterco';
+  src: url('/otterco_fonts/Otterco-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+@font-face {
+  font-family: 'otterco';
+  src: url('/otterco_fonts/Otterco-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Body Settings */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--primary);
+  font-family: 'otterco';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--on-primary);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* md */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
   }
 }
+
+/* lg */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+/* Media Elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form Elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations and transitions for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
