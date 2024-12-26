@@ -8,8 +8,8 @@ const Header = () => {
         <header className={styles.header}>
             <RoundedAvatar />
             <div className={styles.presentationText}>
-                <p className={styles.littleText}>Salut, moi c'est Jayson</p>
-                <Image 
+                <p className={styles.littleText}>Salut, moi c&apos;est Jayson</p>
+                <Image
                     src={'/handwave.svg'}
                     alt={'hand wave'}
                     width={22}
