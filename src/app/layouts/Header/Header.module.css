@@ -7,12 +7,12 @@
 .littleText {
     font-weight: 500;
     font-size: 0.75em;
+    margin-right: 10px;
 }
 
 .presentationText {
     display: flex;
     align-items: center;
-    gap: 7;
     margin: 2em;
     color: var(--light-on-primary);
 }
