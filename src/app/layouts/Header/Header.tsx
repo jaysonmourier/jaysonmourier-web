@@ -1,3 +1,4 @@
+import BigText from "@/app/components/BigText/BigText";
 import RedirectButton from "@/app/components/RedirectButton/RedirectButton";
 import RoundedAvatar from "@/app/components/RoundedAvatar/RoundedAvatar";
 import styles from "@/app/layouts/Header/Header.module.css";
@@ -16,7 +17,7 @@ const Header = () => {
                     height={22}
                 />
             </div>
-            <p className={styles.headerText}>Construire des applications performantes et évolutives. Expertise Flutter.</p>
+            <BigText text="Construire des applications performantes et évolutives. Expertise Flutter." />
             <RedirectButton link="https://youtu.be/4OOuJzf5c_w?si=eVLz_vX2vdauROou" />
         </header>
     );

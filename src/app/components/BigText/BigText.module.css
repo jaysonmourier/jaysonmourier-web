@@ -1,0 +1,10 @@
+.text {
+    max-width: 728px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--on-primary) 50%, var(--primary) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -11,8 +11,8 @@
 .carousel-track {
     display: flex;
     animation: scroll 120s linear infinite;
-}
-
+  }
+  
 /* Icônes */
 .carousel svg {
     width: 4em;
@@ -29,10 +29,9 @@
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
-
     100% {
-        transform: translateX(-100%);
+      transform: translateX(-50%);
     }
-}
+  }

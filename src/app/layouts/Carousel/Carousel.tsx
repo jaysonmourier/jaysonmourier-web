@@ -16,9 +16,6 @@ const Carousel = () => {
                 {icons.map((icon, index) => (
                     <FontAwesomeIcon key={`dup-${index}`} icon={icon} />
                 ))}
-                {icons.map((icon, index) => (
-                    <FontAwesomeIcon key={`dup2-${index}`} icon={icon} />
-                ))}
             </div>
         </div>
     );
