@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Snackbar from '@mui/material/Snackbar';
-import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 
 
