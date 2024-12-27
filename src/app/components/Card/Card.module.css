@@ -3,12 +3,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    gap: 15;
     background-color: var(--background-color-on-primary);
     padding: 4em 1em 1em 1em;
     font-size: 1em; 
     color: var(--light-on-background);
     height: 100%; 
+}
+
+.card > * {
+    margin-top: 1em;
 }
 
 .content {
