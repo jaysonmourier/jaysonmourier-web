@@ -35,6 +35,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'otterco';
+  src: url('/otterco_fonts/Otterco-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 /* Modern CSS Reset */
 *,

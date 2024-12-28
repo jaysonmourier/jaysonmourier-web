@@ -1,0 +1,41 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0.75em;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.description {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.image {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    margin: 2em 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.cards > * {
+    margin: 30px;
+}

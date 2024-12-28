@@ -1,6 +1,5 @@
 import styles from '@/app/layouts/Skills/Skills.module.css';
 import Card from '@/app/components/Card/Card';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCode, faBrain, faServer } from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
