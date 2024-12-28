@@ -3,6 +3,7 @@ import RedirectButton from "@/app/components/RedirectButton/RedirectButton";
 import RoundedAvatar from "@/app/components/RoundedAvatar/RoundedAvatar";
 import styles from "@/app/layouts/Header/Header.module.css";
 import Image from "next/image";
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
     return (
@@ -18,7 +19,11 @@ const Header = () => {
                 />
             </div>
             <BigText text="Construire des applications performantes et évolutives. Expertise Flutter." />
-            <RedirectButton link="https://youtu.be/4OOuJzf5c_w?si=eVLz_vX2vdauROou" />
+            <RedirectButton
+                text="Vidéo"
+                icon={faExternalLink} 
+                link="https://youtu.be/4OOuJzf5c_w?si=eVLz_vX2vdauROou" 
+            />
         </header>
     );
 }

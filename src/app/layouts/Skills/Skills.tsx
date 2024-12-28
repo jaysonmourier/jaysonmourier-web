@@ -1,13 +1,13 @@
 import styles from '@/app/layouts/Skills/Skills.module.css';
 import Card from '@/app/components/Card/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComputer, faCode, faBrain, faServer } from '@fortawesome/free-solid-svg-icons';
+import { faMobile, faCode, faBrain, faServer } from '@fortawesome/free-solid-svg-icons';
 
 const Skills = () => {
     return (
         <section className={styles.section}>
     <Card
-        icon={<FontAwesomeIcon icon={faComputer} />}
+        icon={<FontAwesomeIcon icon={faMobile} />}
         title='Développement Mobile'
         content='Expertise en Flutter et Dart pour créer des applications iOS, Android et Web performantes.'
     />
@@ -24,7 +24,7 @@ const Skills = () => {
     <Card
         icon={<FontAwesomeIcon icon={faServer} />}
         title='DevOps & Bases de données'
-        content='Maîtrise de Git, Docker, CI/CD ainsi que de MySQL, Redis et Firestore pour la gestion et l’optimisation des systèmes back-end.'
+        content='Maîtrise de Git, Docker, CI/CD ainsi que de Symfony, Flask, MySQL, Redis et Firestore pour la gestion et l’optimisation des systèmes back-end.'
     />
     </section>
     );
