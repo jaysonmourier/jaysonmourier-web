@@ -1,8 +1,9 @@
 import styles from '@/app/components/Card/Card.module.css';
-import { JSX } from 'react';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface CardProps {
-    icon: JSX.Element,
+    icon: IconDefinition,
     title: string,
     content: string
 }
@@ -10,7 +11,7 @@ interface CardProps {
 const Card = ({ icon, title, content }: CardProps) => {
     return (
         <div className={styles.card}>
-            {icon}
+            <FontAwesomeIcon icon={icon} />
             <p className={styles.title}>{title}</p>
             <p className={styles.content}>{content}</p>
         </div>
