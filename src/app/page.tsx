@@ -7,6 +7,7 @@ import Skills from "./layouts/Skills/Skills";
 import Experience from "./layouts/Experience/Experience";
 import { faExternalLink, faMobile, faCode, faUsers, faRocket, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import ExperienceCard from "./components/ExperienceCard/ExperienceCard";
+import Footer from "./layouts/Footer/Footer";
 
 export default function Home() {
   return (
@@ -22,11 +23,7 @@ export default function Home() {
       <div className={styles.container}>
         <Skills />
       </div>
-      <div className={styles.home}>
-        <div className={styles.container}>
-          
-        </div>
-      </div>
+      <Footer />
     </>
   );
 }
