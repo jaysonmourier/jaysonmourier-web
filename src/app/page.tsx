@@ -4,9 +4,6 @@ import Header from "@/app/layouts/Header/Header";
 import Carousel from "@/app/layouts/Carousel/Carousel";
 import Noise from "@/app/components/Noise/Noise";
 import Skills from "./layouts/Skills/Skills";
-import Experience from "./layouts/Experience/Experience";
-import { faExternalLink, faMobile, faCode, faUsers, faRocket, faLaptop } from "@fortawesome/free-solid-svg-icons";
-import ExperienceCard from "./components/ExperienceCard/ExperienceCard";
 import Footer from "./layouts/Footer/Footer";
 
 export default function Home() {
