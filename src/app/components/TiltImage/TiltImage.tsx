@@ -41,7 +41,7 @@ const TiltImage = () => {
                 }}
             >
                 <Image
-                    src={"/jayson.jpg"}
+                    src={"/jayson.webp"}
                     alt="Photo de Jayson Mourier"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
