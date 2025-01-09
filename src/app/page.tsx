@@ -1,25 +1,16 @@
-import Nav from "@/app/layouts/Nav/Nav";
-import styles from "@/app/page.module.css";
-import Header from "@/app/layouts/Header/Header";
-import Carousel from "@/app/layouts/Carousel/Carousel";
-import Noise from "@/app/components/Noise/Noise";
-import Skills from "./layouts/Skills/Skills";
+import Noise from "./components/Noise/Noise";
 import Footer from "./layouts/Footer/Footer";
+import Header from "./layouts/Header/Header";
+import Nav from "./layouts/Nav/Nav";
+import Video from "./layouts/Video/video";
 
 export default function Home() {
   return (
     <>
       <Noise />
-      <div className={styles.home}>
-        <div className={styles.container}>
-          <Nav />
-          <Header />
-        </div>
-      </div>
-      <Carousel />
-      <div className={styles.container}>
-        <Skills />
-      </div>
+      <Nav />
+      <Header />
+      <Video url="https://www.youtube.com/embed/4OOuJzf5c_w?si=_DzAFK3YwSEXdAHR" />
       <Footer />
     </>
   );

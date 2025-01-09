@@ -1,80 +1,53 @@
 "use client";
 
-import React, { useState } from 'react';
-import NavButton from "@/app/components/NavButton/NavButton";
-import styles from "@/app/layouts/Nav/Nav.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import Snackbar from '@mui/material/Snackbar';
-import Alert from '@mui/material/Alert';
-
+import { useState } from 'react';
+import NavTextLink from '@/app/components/TextLinks/NavTextLink';
 
 const Nav = () => {
-    const [open, setOpen] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
 
-    const handleOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
-        if (reason === 'clickaway') {
-            return;
-        }
-        setOpen(false);
-    };
-
-    const handleFileClick = () => {
-        window.open("https://drive.proton.me/urls/HRSGRECTYR#OBD0Hewqb20h", '_blank', 'noopener, noreferrer');
+    const _handleDropdown = () => {
+        setShowMenu( !showMenu );
     }
 
-    const handleEmailClick = async () => {
-        await navigator.clipboard.writeText("jayson.mourier@proton.me");
-        handleOpen()
-    }
-
-    const handleLinkedinClick = () => {
-        window.open("https://fr.linkedin.com/in/jaysonmourier", '_blank', 'noopener, noreferrer');
-    }
-
-    const handleGithubClick = () => {
-        window.open("https://github.com/jaysonmourier", '_blank', 'noopener, noreferrer');
-    }
-
-    return (
-        <nav className={styles.nav}>
-            <div className={styles.left}>
-                <NavButton
-                    icon={<FontAwesomeIcon icon={faFile} />}
-                    onClickCallback={handleFileClick}
-                />
-                <NavButton
-                    icon={<FontAwesomeIcon icon={faEnvelope} />}
-                    text="jayson.mourier@proton.me"
-                    onClickCallback={handleEmailClick}
-                />
+    return (        
+    <nav className="bg-white border-gray-200">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+                <span className="self-center text-2xl font-semibold whitespace-nowrap">Jayson</span>
+            </a>
+            <button onClick={_handleDropdown} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span className="sr-only">Ouvrir le menu principal</span>
+                <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div className={`${showMenu ? 'hidden' : 'absolute top-16 left-0 w-full px-4'} md:static md:block md:w-auto`} id="navbar-default">
+                <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <NavTextLink 
+                            text='Projets'
+                            href='#'
+                        />
+                    </li>
+                    <li>
+                        <NavTextLink
+                            text='Articles'
+                            href='#'
+                            externalLink
+                        />
+                    </li>
+                    <li>
+                        <NavTextLink
+                            text='Contact'
+                            href='mailto:jayson.mourier@proton.me'
+                            externalLink
+                        />
+                    </li>
+                </ul>
             </div>
-            <div className={styles.right}>
-                <NavButton
-                    icon={<FontAwesomeIcon icon={faLinkedin} />}
-                    onClickCallback={handleLinkedinClick}
-                />
-                <NavButton
-                    icon={<FontAwesomeIcon icon={faGithub} />}
-                    onClickCallback={handleGithubClick}
-                />
-            </div>
-            <Snackbar
-                open={open}
-                autoHideDuration={3000}
-                onClose={handleClose}
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-            >
-                <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                    Email copié dans le presse papier!
-                </Alert>
-            </Snackbar>
-        </nav>
+        </div>
+    </nav>
     );
 }
 

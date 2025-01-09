@@ -1,122 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --primary: #ffffff;
-  --on-primary: #242424;
-  --light-on-background: #f8f5ff;
-  --background-color-on-primary: #242424;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #161616;
-    --on-primary: #ededed;
-    --background-color-on-primary: #1a1a1a;
-    --light-on-background: #6f6f6f;
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
-}
+} */
 
-@font-face {
-  font-family: 'otterco';
-  src: url('/otterco_fonts/Otterco-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'otterco';
-  src: url('/otterco_fonts/Otterco-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'otterco';
-  src: url('/otterco_fonts/Otterco-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'otterco';
-  src: url('/otterco_fonts/Otterco-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
-
-/* Modern CSS Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Settings */
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-color: var(--primary);
-  font-family: 'otterco';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  color: var(--on-primary);
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter-sans), Arial, Helvetica, sans-serif;
 }
-
-/* md */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* lg */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
-}
-
-/* xl */
-@media (min-width: 1280px) {
-  body {
-    font-size: 22px;
-  }
-}
-
-/* 2xl */
-@media (min-width: 1536px) {
-  body {
-    font-size: 24px;
-  }
-}
-
-/* Media Elements */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* Form Elements */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove animations and transitions for people who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-

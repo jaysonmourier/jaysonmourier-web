@@ -1,11 +1,9 @@
-import styles from '@/app/layouts/Footer/Footer.module.css';
-
 const Footer = () => {
     return (
-        <footer className={styles.footer}>
-            <p>Made with next.js</p>
+        <footer className="py-20 text-center text-neutral-400">
+            Copyright &copy; 2025 Jayson Mourier
         </footer>
-    );
+    )
 }
 
 export default Footer;
