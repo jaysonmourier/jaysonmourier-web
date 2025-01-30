@@ -18,6 +18,7 @@ const Skills = () => {
                     key={index}
                     icon={skill.icon}
                     title={skill.name}
+                    style={{ width: "2.5em" }}
                     className="hover:text-primary hover:scale-110 transition-transform duration-200 max-w-14 md:max-w-20"
                 />
             ))}
